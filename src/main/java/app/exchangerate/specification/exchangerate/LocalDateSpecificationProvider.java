@@ -4,7 +4,9 @@ import app.exchangerate.model.ExchangeRate;
 import app.exchangerate.specification.SpecificationProvider;
 import jakarta.persistence.criteria.Predicate;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LocalDateSpecificationProvider implements SpecificationProvider<ExchangeRate> {
     private static final String FILTER_KEY = "local_date";
 

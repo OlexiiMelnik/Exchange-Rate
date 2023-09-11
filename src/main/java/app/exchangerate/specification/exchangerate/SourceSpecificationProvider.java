@@ -5,7 +5,9 @@ import app.exchangerate.specification.SpecificationProvider;
 import jakarta.persistence.criteria.Expression;
 import jakarta.persistence.criteria.Predicate;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.stereotype.Component;
 
+@Component
 public class SourceSpecificationProvider implements SpecificationProvider<ExchangeRate> {
     private static final String FILTER_KEY = "source";
 
