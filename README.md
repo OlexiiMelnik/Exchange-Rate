@@ -23,3 +23,35 @@ The "Currency Rate Application" offers significant business value by providing t
 5.**Streamlined Operations**: The Currency Rate Application simplifies the process of obtaining and managing exchange rate information. By centralizing the data from multiple APIs and offering a user-friendly interface, the application saves time and effort for businesses, allowing them to focus on core operations.
 
 6.**Competitive Advantage**: Access to accurate and timely exchange rate data gives businesses a competitive edge in the global market. It enables them to optimize pricing strategies, negotiate favorable terms with international partners, and stay ahead of market trends, enhancing overall competitiveness.
+
+# PROJECT STRUCTURE🛠
+The project follows a 4-tier architecture
+
+**Data Access Tier**:
+
+• **repository (directory)**: Repositories responsible for data access and interaction with the database.
+
+• **specification (directory)**: Specifications used to create complex queries to the database for data filtering.
+
+**liquibase (directory)**: Configuration and files related to Liquibase used for table creation and data population.
+
+**Presentation Layer**:
+
+• **controller (directory)**: Controllers that handle HTTP requests from users and process them.
+
+• **dto (directory)**: Objects for data transfer (DTOs) used for data exchange between the client and server.
+
+• **validation (directory)**: Rules and checks for data validation.
+
+**Business Logic Layer**:
+
+• **model (directory)**: Models representing the core entities of your application .
+
+• **service (directory)**: Services responsible for executing the business logic of the application and interacting with repositories.
+
+• **mapper (directory)**: Mappers responsible for transforming objects between different representations.
+
+• **exception (directory)**: Classes for handling exceptions and errors that occur at the business logic and data levels.
+
+• **MyGlobalExceptionHandler**: A global exception handler responsible for handling various types of exceptions at the presentation layer.
+• **config (directory)**: Configuration files, such as MapperConfig and SecurityConfig.
