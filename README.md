@@ -98,3 +98,5 @@ The project follows a 4-tier architecture
 
 18.  JSON
 
+19.  Cron job
+
