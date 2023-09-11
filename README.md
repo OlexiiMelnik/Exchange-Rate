@@ -55,3 +55,7 @@ The project follows a 4-tier architecture
 
 • **MyGlobalExceptionHandler**: A global exception handler responsible for handling various types of exceptions at the presentation layer.
 • **config (directory)**: Configuration files, such as MapperConfig and SecurityConfig.
+
+**Security Tier**:
+
+• **security (directory)**: A package responsible for ensuring the security of the application, including authentication and authorization.
