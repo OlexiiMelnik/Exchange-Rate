@@ -72,9 +72,8 @@ public class ExchangeRateController {
         return exchangeRateService.search(params, pageable);
     }
 
-    @Operation(summary = "Return average rates",
-            description = "Returns rates in the database along "
-            + "with the average buy and sale rates for USD and EUR by period")
+    @Operation(summary = "Returns the average bid and ask rates for USD and EUR for the period",
+            description = "Returns the average bid and ask rates for USD and EUR for the period")
     @GetMapping("/allWithAvg")
     public ResponseEntity<Map<String, Object>> findAverage(
             @RequestParam LocalDateTime from,
