@@ -28,13 +28,9 @@ public class ExchangeRatesSpecificationBuilder
         if (exchangeRateSearchParametersDto.sources() != null
                 && exchangeRateSearchParametersDto.sources().length > 0) {
             ExchangeRate.Source[] sources = exchangeRateSearchParametersDto.sources();
-            String[] sourceValues = new String[sources.length];
-            for (int i = 0; i < sources.length; i++) {
-                sourceValues[i] = sources[i].toString();
-            }
             spec = spec.and(exchangeRateSpecificationProviderManager
                     .getSpecificationProvider("source")
-                    .getSpecification(sourceValues));
+                    .getSpecification(sources));
         }
         return spec;
     }

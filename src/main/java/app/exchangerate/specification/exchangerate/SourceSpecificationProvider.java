@@ -17,7 +17,7 @@ public class SourceSpecificationProvider implements SpecificationProvider<Exchan
     }
 
     @Override
-    public Specification<ExchangeRate> getSpecification(String[] params) {
+    public Specification<ExchangeRate> getSpecification(Object[] params) {
         return (root, query, criteriaBuilder) -> {
             Expression<String> expression = root.get(FILTER_KEY);
             Predicate predicate = expression.in((Object[]) params);
